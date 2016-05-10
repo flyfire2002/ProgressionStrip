@@ -1,13 +1,13 @@
 #ifndef STRIP_H
 #define STRIP_H
 
-#include <QDialog>
+#include <QWidget>
 
 namespace Ui {
 class Strip;
 }
 
-class Strip : public QDialog
+class Strip : public QWidget
 {
     Q_OBJECT
 

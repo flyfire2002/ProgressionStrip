@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Strip</class>
- <widget class="QDialog" name="Strip">
+ <widget class="QWidget" name="Strip">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -31,12 +34,15 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 170, 0);</string>
+  </property>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>61</width>
+     <width>77</width>
      <height>61</height>
     </rect>
    </property>
@@ -49,6 +55,9 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
       <property name="text">
        <string>Move Back</string>
       </property>
@@ -59,9 +68,9 @@
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>380</x>
+     <x>370</x>
      <y>0</y>
-     <width>61</width>
+     <width>77</width>
      <height>61</height>
     </rect>
    </property>
@@ -73,6 +82,9 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string>Forward</string>
@@ -87,6 +99,9 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
       <property name="text">
        <string>Finish</string>
       </property>
@@ -97,9 +112,9 @@
   <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>80</x>
      <y>0</y>
-     <width>301</width>
+     <width>291</width>
      <height>61</height>
     </rect>
    </property>
@@ -107,20 +122,36 @@
     <item>
      <layout class="QHBoxLayout" name="titleLayout">
       <item>
-       <widget class="QLineEdit" name="titleName"/>
+       <widget class="QLineEdit" name="titleName">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
       <item>
-       <widget class="QDateTimeEdit" name="titleDL"/>
+       <widget class="QDateTimeEdit" name="titleDL">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
     <item>
      <layout class="QHBoxLayout" name="stageLayout">
       <item>
-       <widget class="QLineEdit" name="stageName"/>
+       <widget class="QLineEdit" name="stageName">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
       <item>
-       <widget class="QDateTimeEdit" name="stageDL"/>
+       <widget class="QDateTimeEdit" name="stageDL">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>

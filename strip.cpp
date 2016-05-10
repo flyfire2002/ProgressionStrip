@@ -2,7 +2,7 @@
 #include "ui_strip.h"
 
 Strip::Strip(QWidget *parent) :
-    QDialog(parent),
+    QWidget(parent),
     ui(new Ui::Strip)
 {
     ui->setupUi(this);
